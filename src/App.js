@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
 
-{/*<Route path="/reg" element={<Reg />} />*/}
       <Routes> 
             <Route path="/" element={<Dashboard/>}/>
             <Route path="/add" element={<Add/>}/>
