@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import back from '../image/Back.jpg'
 function Sign() {
     const navigate = useNavigate();
 
@@ -9,14 +10,13 @@ function Sign() {
 
     return (
 
-        <div>
-
-            <section class="bg-gray-50">
+        <div >
+            <section class="bg-cover">
                 <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto xl:h-screen lg:py-0">
                     <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-black">
                         Downtime Monitoring
                     </a>
-                    <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 backdrop-blur-sm dark:bg-transparent dark:border-gray-700">
+                    <div class="w-full bg-transparent rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 backdrop-blur-sm dark:bg-transparent dark:border-gray-700">
                         <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                             <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-black">
                                 Sign in to your account
