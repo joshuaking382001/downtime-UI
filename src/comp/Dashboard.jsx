@@ -1,6 +1,6 @@
 
 import logo from '../image/logo1.png'
-import foot from '../image/logo2.png'
+import back2 from '../image/Back1.jpg'
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 function Dashboard() {
@@ -24,7 +24,7 @@ function Dashboard() {
 
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div>
+        <div class="bg-cover bg-center" style={{backgroundImage:"url("+back2+")"}}>
             <nav class=" xl:w-full rounded-b-xl border-gray-200 dark:bg-black dark:border-gray-700">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between">
                     <a href="https://digiplusagency.com/" class="flex items-center px-5 space-x-3 rtl:space-x-reverse">
@@ -73,7 +73,7 @@ function Dashboard() {
                 </div>
             </nav>
 
-            <div class="bg-white">
+            <div>
                 <div class="mx-auto max-w-full-md px-3 lg:px-2">
                     <div class="mx-auto mt-16  rounded-3xl ring-1 ring-gray-200 sm:mt-2 lg:mx-0 xl:flex xl:max-w-full">
                         <div class=" sm:p-5 lg:flex-auto">
