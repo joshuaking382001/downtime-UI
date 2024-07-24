@@ -1,8 +1,8 @@
-
 import logo from '../image/logo1.png'
 import back2 from '../image/Back1.jpg'
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
+import Foot from './Foot';
 function Dashboard() {
     const navigate = useNavigate();
 
@@ -24,7 +24,8 @@ function Dashboard() {
 
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div class="bg-cover bg-center" style={{backgroundImage:"url("+back2+")"}}>
+        <div class="bg-cover" style={{ backgroundImage: "url(" + back2 + ")" }}>
+            <div class=" backdrop-blur-sm " >
             <nav class=" xl:w-full rounded-b-xl border-gray-200 dark:bg-black dark:border-gray-700">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between">
                     <a href="https://digiplusagency.com/" class="flex items-center px-5 space-x-3 rtl:space-x-reverse">
@@ -74,8 +75,8 @@ function Dashboard() {
             </nav>
 
             <div>
-                <div class="mx-auto max-w-full-md px-3 lg:px-2">
-                    <div class="mx-auto mt-16  rounded-3xl ring-1 ring-gray-200 sm:mt-2 lg:mx-0 xl:flex xl:max-w-full">
+                <div class="mx-auto max-w-full-md backdrop-blur-sm px-3 lg:px-2">
+                    <div class="mx-auto mt-16  rounded-3xl sm:mt-2 lg:mx-0 xl:flex xl:max-w-full">
                         <div class=" sm:p-5 lg:flex-auto">
 
                             <div class='max-w-md '>
@@ -96,7 +97,7 @@ function Dashboard() {
 
                             <div class="relative my-4 overflow-x-auto shadow-md sm:rounded-lg">
                                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-green-500 dark:text-black">
+                                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-lime-400 dark:text-black">
                                         <tr>
                                             <th scope="col" class="px-6 py-3">
                                                 URL
@@ -139,7 +140,7 @@ function Dashboard() {
                                                 <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                                             </td>
                                         </tr>
-                                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-green-100 border-b dark:border-gray-700">
+                                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-lime-100 border-b dark:border-gray-700">
                                             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
 
                                             </th>
@@ -178,7 +179,7 @@ function Dashboard() {
                                                 <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                                             </td>
                                         </tr>
-                                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-green-100 border-b dark:border-gray-700">
+                                        <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-lime-100 border-b dark:border-gray-700">
                                             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
 
                                             </th>
@@ -240,7 +241,9 @@ function Dashboard() {
                     </div>
                 </div>
             </div>
+            <Foot/>
 
+        </div>
         </div>
     )
 }

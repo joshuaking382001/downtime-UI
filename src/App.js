@@ -19,7 +19,6 @@ function App() {
         <Route path="/sign" element={<Sign />} />
         <Route path="/reg" element={<Reg />} />
       </Routes>
-      <Foot />
     </div>
   );
 }

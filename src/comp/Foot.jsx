@@ -3,7 +3,7 @@ import foot from '../image/logo2.png'
 function Foot() {
     return (
         <div>
-            <footer class="shadow backdrop-blur-md py-3 dark:bg-transparent ">
+            <footer class="shadow backdrop-blur-sm py-3 dark:bg-transparent ">
                 <div class="md:w-full max-w-screen-xl mx-auto md:py-1">
                     <div class="sm:flex sm:items-center sm:justify-between">
                         <a href="https://digiplusagency.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
